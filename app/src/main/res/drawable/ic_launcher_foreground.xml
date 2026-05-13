@@ -1,0 +1,13 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Размеры 108x108, safe zone — центр ~66x66 -->
+    <path
+        android:fillColor="#F57C00"
+        android:pathData="M54,28 L76,40 L76,68 L54,80 L32,68 L32,40 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,42 L68,42 L68,48 L57,48 L57,70 L51,70 L51,48 L40,48 Z" />
+</vector>
