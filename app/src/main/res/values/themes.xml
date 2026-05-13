@@ -23,7 +23,7 @@
     </style>
 
     <style name="Theme.StroyKrep.Splash">
-        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:windowBackground">@color/brand_primary</item>
         <item name="android:statusBarColor" tools:targetApi="l">@color/brand_primary</item>
     </style>
 </resources>
