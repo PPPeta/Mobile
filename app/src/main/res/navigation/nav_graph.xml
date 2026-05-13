@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!-- Tabs -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ru.stroykrep.app.ui.home.HomeFragment"
+        android:label="@string/nav_home"
+        tools:layout="@layout/fragment_home"
+        xmlns:tools="http://schemas.android.com/tools" />
+
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="ru.stroykrep.app.ui.catalog.CategoriesFragment"
+        android:label="@string/nav_catalog"
+        tools:layout="@layout/fragment_categories"
+        xmlns:tools="http://schemas.android.com/tools" />
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="ru.stroykrep.app.ui.cart.CartFragment"
+        android:label="@string/nav_cart"
+        tools:layout="@layout/fragment_cart"
+        xmlns:tools="http://schemas.android.com/tools" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="ru.stroykrep.app.ui.profile.ProfileFragment"
+        android:label="@string/nav_profile"
+        tools:layout="@layout/fragment_profile"
+        xmlns:tools="http://schemas.android.com/tools" />
+
+    <!-- Catalog stack -->
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="ru.stroykrep.app.ui.catalog.ProductsFragment"
+        android:label="Товары">
+        <argument
+            android:name="categoryId"
+            app:argType="long" />
+        <argument
+            android:name="categoryName"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="ru.stroykrep.app.ui.catalog.ProductFragment"
+        android:label="Товар">
+        <argument
+            android:name="productId"
+            app:argType="long" />
+    </fragment>
+
+    <!-- Cart stack -->
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="ru.stroykrep.app.ui.cart.CheckoutFragment"
+        android:label="@string/checkout_title" />
+
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="ru.stroykrep.app.ui.cart.PaymentFragment"
+        android:label="@string/payment_title">
+        <argument
+            android:name="orderId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentSuccessFragment"
+        android:name="ru.stroykrep.app.ui.cart.PaymentSuccessFragment"
+        android:label="@string/payment_success">
+        <argument
+            android:name="orderId"
+            app:argType="long" />
+    </fragment>
+
+    <!-- Orders -->
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="ru.stroykrep.app.ui.orders.OrdersFragment"
+        android:label="@string/orders_title" />
+
+    <fragment
+        android:id="@+id/orderDetailsFragment"
+        android:name="ru.stroykrep.app.ui.orders.OrderDetailsFragment"
+        android:label="@string/orders_title">
+        <argument
+            android:name="orderId"
+            app:argType="long" />
+    </fragment>
+
+    <!-- Favorites -->
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="ru.stroykrep.app.ui.favorites.FavoritesFragment"
+        android:label="@string/favorites_title" />
+
+    <!-- Profile stack -->
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="ru.stroykrep.app.ui.profile.EditProfileFragment"
+        android:label="@string/profile_edit" />
+
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="ru.stroykrep.app.ui.profile.ChangePasswordFragment"
+        android:label="@string/profile_change_password" />
+
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="ru.stroykrep.app.ui.profile.ContactsFragment"
+        android:label="@string/profile_contacts" />
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="ru.stroykrep.app.ui.profile.AboutFragment"
+        android:label="@string/about_title" />
+
+    <!-- Global actions -->
+    <action
+        android:id="@+id/action_global_productsFragment"
+        app:destination="@id/productsFragment" />
+
+    <action
+        android:id="@+id/action_global_productFragment"
+        app:destination="@id/productFragment" />
+
+    <action
+        android:id="@+id/action_global_checkoutFragment"
+        app:destination="@id/checkoutFragment" />
+
+    <action
+        android:id="@+id/action_global_paymentFragment"
+        app:destination="@id/paymentFragment" />
+
+    <action
+        android:id="@+id/action_global_paymentSuccessFragment"
+        app:destination="@id/paymentSuccessFragment"
+        app:popUpTo="@id/cartFragment"
+        app:popUpToInclusive="false" />
+
+    <action
+        android:id="@+id/action_global_ordersFragment"
+        app:destination="@id/ordersFragment" />
+
+    <action
+        android:id="@+id/action_global_orderDetailsFragment"
+        app:destination="@id/orderDetailsFragment" />
+
+    <action
+        android:id="@+id/action_global_favoritesFragment"
+        app:destination="@id/favoritesFragment" />
+
+    <action
+        android:id="@+id/action_global_editProfileFragment"
+        app:destination="@id/editProfileFragment" />
+
+    <action
+        android:id="@+id/action_global_changePasswordFragment"
+        app:destination="@id/changePasswordFragment" />
+
+    <action
+        android:id="@+id/action_global_contactsFragment"
+        app:destination="@id/contactsFragment" />
+
+    <action
+        android:id="@+id/action_global_aboutFragment"
+        app:destination="@id/aboutFragment" />
+
+    <action
+        android:id="@+id/action_global_categoriesFragment"
+        app:destination="@id/categoriesFragment" />
+
+</navigation>

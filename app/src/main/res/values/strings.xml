@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Строй Креп</string>
+
+    <!-- Auth -->
+    <string name="auth_login">Вход</string>
+    <string name="auth_register">Регистрация</string>
+    <string name="auth_logout">Выйти</string>
+    <string name="auth_email">Email</string>
+    <string name="auth_password">Пароль</string>
+    <string name="auth_password_repeat">Повторите пароль</string>
+    <string name="auth_full_name">ФИО</string>
+    <string name="auth_phone">Телефон</string>
+    <string name="auth_have_account">Уже есть аккаунт? Войти</string>
+    <string name="auth_no_account">Нет аккаунта? Зарегистрироваться</string>
+    <string name="auth_welcome">Добро пожаловать!</string>
+    <string name="auth_welcome_subtitle">Магазин крепежа «Строй Креп»</string>
+
+    <!-- Errors -->
+    <string name="err_required">Поле обязательно</string>
+    <string name="err_email">Некорректный email</string>
+    <string name="err_phone">Некорректный номер телефона</string>
+    <string name="err_password_short">Пароль минимум 6 символов</string>
+    <string name="err_passwords_mismatch">Пароли не совпадают</string>
+    <string name="err_email_taken">Email уже зарегистрирован</string>
+    <string name="err_login_failed">Неверный email или пароль</string>
+
+    <!-- Bottom nav -->
+    <string name="nav_home">Главная</string>
+    <string name="nav_catalog">Каталог</string>
+    <string name="nav_cart">Корзина</string>
+    <string name="nav_profile">Профиль</string>
+
+    <!-- Home -->
+    <string name="home_banner_title">Крепёж для строительства и ремонта</string>
+    <string name="home_banner_subtitle">Более 1000 товаров в наличии</string>
+    <string name="home_categories">Категории</string>
+    <string name="home_popular">Популярные товары</string>
+    <string name="home_see_all">Смотреть все</string>
+
+    <!-- Catalog -->
+    <string name="catalog_title">Каталог</string>
+    <string name="catalog_search_hint">Поиск по названию</string>
+    <string name="catalog_sort">Сортировка</string>
+    <string name="catalog_filter">Фильтр</string>
+    <string name="catalog_empty">Товары не найдены</string>
+    <string name="sort_name_asc">По названию (А–Я)</string>
+    <string name="sort_price_asc">По цене (возрастание)</string>
+    <string name="sort_price_desc">По цене (убывание)</string>
+
+    <!-- Product -->
+    <string name="product_sku">Артикул: %1$s</string>
+    <string name="product_price">%1$s ₽</string>
+    <string name="product_add_to_cart">В корзину</string>
+    <string name="product_in_cart">В корзине</string>
+    <string name="product_add_favorite">В избранное</string>
+    <string name="product_remove_favorite">Убрать из избранного</string>
+    <string name="product_description">Описание</string>
+    <string name="product_characteristics">Характеристики</string>
+    <string name="product_standard">Стандарт</string>
+    <string name="product_size">Размер</string>
+    <string name="product_material">Материал</string>
+    <string name="product_coating">Покрытие</string>
+
+    <!-- Cart -->
+    <string name="cart_title">Корзина</string>
+    <string name="cart_empty">Корзина пуста</string>
+    <string name="cart_total">Итого: %1$s ₽</string>
+    <string name="cart_checkout">Оформить заказ</string>
+    <string name="cart_remove">Удалить</string>
+
+    <!-- Checkout -->
+    <string name="checkout_title">Оформление заказа</string>
+    <string name="checkout_recipient">Получатель</string>
+    <string name="checkout_delivery">Способ доставки</string>
+    <string name="checkout_delivery_pickup">Самовывоз</string>
+    <string name="checkout_delivery_courier">Курьер</string>
+    <string name="checkout_address">Адрес доставки</string>
+    <string name="checkout_payment">Способ оплаты</string>
+    <string name="checkout_payment_cod">При получении</string>
+    <string name="checkout_payment_online">Картой онлайн</string>
+    <string name="checkout_comment">Комментарий к заказу</string>
+    <string name="checkout_confirm">Подтвердить заказ</string>
+
+    <!-- Payment -->
+    <string name="payment_title">Оплата</string>
+    <string name="payment_provider">ЮKassa</string>
+    <string name="payment_card_number">Номер карты</string>
+    <string name="payment_card_expiry">ММ/ГГ</string>
+    <string name="payment_card_cvc">CVC</string>
+    <string name="payment_card_holder">Держатель карты</string>
+    <string name="payment_amount">Сумма: %1$s ₽</string>
+    <string name="payment_pay">Оплатить</string>
+    <string name="payment_processing">Обработка платежа…</string>
+    <string name="payment_success">Оплата прошла успешно</string>
+    <string name="payment_err_card">Некорректный номер карты</string>
+    <string name="payment_err_expiry">Некорректный срок действия</string>
+    <string name="payment_err_cvc">Некорректный CVC</string>
+
+    <!-- Orders -->
+    <string name="orders_title">Мои заказы</string>
+    <string name="orders_empty">Заказов пока нет</string>
+    <string name="order_number">Заказ №%1$d</string>
+    <string name="order_date">от %1$s</string>
+    <string name="order_sum">Сумма: %1$s ₽</string>
+    <string name="order_status_new">Новый</string>
+    <string name="order_status_paid">Оплачен</string>
+    <string name="order_status_delivery">В доставке</string>
+    <string name="order_status_done">Выполнен</string>
+    <string name="order_repeat">Повторить заказ</string>
+
+    <!-- Favorites -->
+    <string name="favorites_title">Избранное</string>
+    <string name="favorites_empty">В избранном пока пусто</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Профиль</string>
+    <string name="profile_edit">Редактировать профиль</string>
+    <string name="profile_change_password">Сменить пароль</string>
+    <string name="profile_orders">Мои заказы</string>
+    <string name="profile_favorites">Избранное</string>
+    <string name="profile_contacts">Контакты магазина</string>
+    <string name="profile_about">О приложении</string>
+    <string name="profile_saved">Изменения сохранены</string>
+
+    <!-- Change password -->
+    <string name="cp_old">Текущий пароль</string>
+    <string name="cp_new">Новый пароль</string>
+    <string name="cp_new_repeat">Повторите новый пароль</string>
+    <string name="cp_save">Сохранить</string>
+    <string name="cp_err_old">Неверный текущий пароль</string>
+
+    <!-- Contacts -->
+    <string name="contacts_address_label">Адрес</string>
+    <string name="contacts_phone_label">Телефон</string>
+    <string name="contacts_hours_label">Режим работы</string>
+    <string name="contacts_address_value">г. Москва, ул. Строителей, д. 12</string>
+    <string name="contacts_phone_value">+7 (495) 123-45-67</string>
+    <string name="contacts_hours_value">Пн–Пт: 9:00–19:00\nСб–Вс: 10:00–17:00</string>
+
+    <!-- About -->
+    <string name="about_title">О приложении</string>
+    <string name="about_text">Мобильное приложение «Строй Креп» — каталог и заказ крепёжных изделий.\nВерсия 1.0\n\nДипломный проект.</string>
+
+    <!-- Common -->
+    <string name="action_save">Сохранить</string>
+    <string name="action_cancel">Отмена</string>
+    <string name="action_ok">OK</string>
+    <string name="action_back">Назад</string>
+</resources>

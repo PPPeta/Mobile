@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand -->
+    <color name="brand_primary">#1E3A5F</color>
+    <color name="brand_primary_dark">#142943</color>
+    <color name="brand_accent">#F57C00</color>
+    <color name="brand_accent_dark">#E65100</color>
+
+    <!-- Neutral -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="bg">#F5F6F8</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="divider">#E4E6EB</color>
+
+    <!-- Text -->
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_hint">#9AA0A6</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- Status -->
+    <color name="status_new">#2196F3</color>
+    <color name="status_paid">#4CAF50</color>
+    <color name="status_delivery">#FF9800</color>
+    <color name="status_done">#607D8B</color>
+    <color name="error">#D32F2F</color>
+</resources>
