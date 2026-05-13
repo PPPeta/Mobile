@@ -183,15 +183,3 @@ private fun com.google.android.material.textfield.TextInputEditText.doOnTextChan
         override fun afterTextChanged(s: android.text.Editable?) = Unit
     })
 }
-
-@Suppress("unused")
-private val _unusedJob: Job? = null
-
-@Suppress("unused")
-private val _unusedJob: Job? = null
-
-@Suppress("unused")
-private val _unusedJob: Job? = null
-
-@Suppress("unused")
-private val _unusedJob: Job? = null
