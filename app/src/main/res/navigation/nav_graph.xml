@@ -124,56 +124,108 @@
     <!-- Global actions -->
     <action
         android:id="@+id/action_global_productsFragment"
-        app:destination="@id/productsFragment" />
+        app:destination="@id/productsFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
 
     <action
         android:id="@+id/action_global_productFragment"
-        app:destination="@id/productFragment" />
+        app:destination="@id/productFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
 
     <action
         android:id="@+id/action_global_checkoutFragment"
-        app:destination="@id/checkoutFragment" />
+        app:destination="@id/checkoutFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
 
     <action
         android:id="@+id/action_global_paymentFragment"
-        app:destination="@id/paymentFragment" />
+        app:destination="@id/paymentFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
 
     <action
         android:id="@+id/action_global_paymentSuccessFragment"
         app:destination="@id/paymentSuccessFragment"
         app:popUpTo="@id/cartFragment"
-        app:popUpToInclusive="false" />
+        app:popUpToInclusive="false"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
 
     <action
         android:id="@+id/action_global_ordersFragment"
-        app:destination="@id/ordersFragment" />
+        app:destination="@id/ordersFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
 
     <action
         android:id="@+id/action_global_orderDetailsFragment"
-        app:destination="@id/orderDetailsFragment" />
+        app:destination="@id/orderDetailsFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
 
     <action
         android:id="@+id/action_global_favoritesFragment"
-        app:destination="@id/favoritesFragment" />
+        app:destination="@id/favoritesFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
 
     <action
         android:id="@+id/action_global_editProfileFragment"
-        app:destination="@id/editProfileFragment" />
+        app:destination="@id/editProfileFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
 
     <action
         android:id="@+id/action_global_changePasswordFragment"
-        app:destination="@id/changePasswordFragment" />
+        app:destination="@id/changePasswordFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
 
     <action
         android:id="@+id/action_global_contactsFragment"
-        app:destination="@id/contactsFragment" />
+        app:destination="@id/contactsFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
 
     <action
         android:id="@+id/action_global_aboutFragment"
-        app:destination="@id/aboutFragment" />
+        app:destination="@id/aboutFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
 
     <action
         android:id="@+id/action_global_categoriesFragment"
-        app:destination="@id/categoriesFragment" />
+        app:destination="@id/categoriesFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
 
 </navigation>

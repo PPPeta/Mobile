@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Bolt shaft -->
+    <path
+        android:fillColor="#546E7A"
+        android:pathData="M22,14 L26,14 L26,42 L22,42 Z" />
+    <!-- Thread lines -->
+    <path
+        android:strokeColor="#37474F"
+        android:strokeWidth="0.8"
+        android:pathData="M22,18 L26,18 M22,21 L26,21 M22,24 L26,24 M22,27 L26,27 M22,30 L26,30 M22,33 L26,33 M22,36 L26,36 M22,39 L26,39" />
+    <!-- Hex head -->
+    <path
+        android:fillColor="#455A64"
+        android:pathData="M16,6 L32,6 L34,10 L32,14 L16,14 L14,10 Z" />
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M18,7 L30,7 L31,10 L30,13 L18,13 L17,10 Z" />
+</vector>

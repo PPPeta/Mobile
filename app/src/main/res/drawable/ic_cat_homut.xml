@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Band (ring) -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M24,8 m-14,0 a14,14 0,1 1,28 0 a14,14 0,1 1,-28 0"
+        android:strokeColor="#546E7A"
+        android:strokeWidth="3" />
+    <!-- Inner circle (empty) -->
+    <path
+        android:fillColor="#ECEFF1"
+        android:pathData="M24,8 m-11,0 a11,11 0,1 1,22 0 a11,11 0,1 1,-22 0" />
+    <!-- Screw housing -->
+    <path
+        android:fillColor="#455A64"
+        android:pathData="M34,4 L42,4 L42,12 L34,12 Z" />
+    <!-- Screw slot -->
+    <path
+        android:strokeColor="#B0BEC5"
+        android:strokeWidth="1"
+        android:pathData="M36,8 L40,8" />
+    <!-- Worm thread -->
+    <path
+        android:strokeColor="#37474F"
+        android:strokeWidth="0.5"
+        android:pathData="M11,5 L13,7 M13,4 L15,6 M15,3 L17,5" />
+</vector>

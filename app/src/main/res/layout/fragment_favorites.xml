@@ -44,6 +44,7 @@
             android:layout_height="match_parent"
             android:padding="@dimen/space_s"
             android:clipToPadding="false"
+            android:layoutAnimation="@anim/layout_animation_fall_down"
             tools:itemCount="4"
             tools:listitem="@layout/item_product_card" />
 

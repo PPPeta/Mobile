@@ -147,4 +147,10 @@
     <string name="action_cancel">Отмена</string>
     <string name="action_ok">OK</string>
     <string name="action_back">Назад</string>
+
+    <!-- Theme -->
+    <string name="settings_theme">Тема оформления</string>
+    <string name="theme_system">Как в системе</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
 </resources>

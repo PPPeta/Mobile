@@ -1,0 +1,27 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Nail shaft -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M23,10 L25,10 L25,40 L23,40 Z" />
+    <!-- Head (flat) -->
+    <path
+        android:fillColor="#455A64"
+        android:pathData="M18,6 L30,6 L30,10 L18,10 Z" />
+    <!-- Head top -->
+    <path
+        android:fillColor="#546E7A"
+        android:pathData="M19,7 L29,7 L29,9 L19,9 Z" />
+    <!-- Point -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M23,40 L24,44 L25,40 Z" />
+    <!-- Shine -->
+    <path
+        android:strokeColor="#B0BEC5"
+        android:strokeWidth="0.5"
+        android:pathData="M24.5,12 L24.5,38" />
+</vector>

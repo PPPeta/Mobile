@@ -27,8 +27,16 @@ class SessionManager(context: Context) {
         prefs.edit().remove(KEY_USER_ID).apply()
     }
 
+    /** Тема: 0 = системная, 1 = светлая, 2 = тёмная */
+    fun getThemeMode(): Int = prefs.getInt(KEY_THEME, 0)
+
+    fun setThemeMode(mode: Int) {
+        prefs.edit().putInt(KEY_THEME, mode).apply()
+    }
+
     companion object {
         private const val PREFS = "stroykrep_prefs"
         private const val KEY_USER_ID = "current_user_id"
+        private const val KEY_THEME = "theme_mode"
     }
 }

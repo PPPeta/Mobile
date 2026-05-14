@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Shaft -->
+    <path
+        android:fillColor="#546E7A"
+        android:pathData="M22,4 L26,4 L26,32 L22,32 Z" />
+    <!-- Thread -->
+    <path
+        android:strokeColor="#37474F"
+        android:strokeWidth="0.7"
+        android:pathData="M22,8 L26,8 M22,11 L26,11 M22,14 L26,14 M22,17 L26,17" />
+    <!-- Expansion sleeve -->
+    <path
+        android:fillColor="#455A64"
+        android:pathData="M20,28 L28,28 L28,38 L20,38 Z" />
+    <!-- Expansion wings -->
+    <path
+        android:fillColor="#607D8B"
+        android:pathData="M20,38 L16,44 L20,42 Z" />
+    <path
+        android:fillColor="#607D8B"
+        android:pathData="M28,38 L32,44 L28,42 Z" />
+    <!-- Nut on top -->
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M20,2 L28,2 L28,6 L20,6 Z" />
+</vector>

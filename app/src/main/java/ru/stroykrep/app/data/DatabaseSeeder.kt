@@ -16,14 +16,14 @@ object DatabaseSeeder {
         if (categoryDao.count() > 0) return
 
         val categories = listOf(
-            Category(id = 1, name = "Саморезы", iconRes = "ic_bolt"),
-            Category(id = 2, name = "Болты", iconRes = "ic_bolt"),
-            Category(id = 3, name = "Гайки", iconRes = "ic_bolt"),
-            Category(id = 4, name = "Шайбы", iconRes = "ic_bolt"),
-            Category(id = 5, name = "Анкеры", iconRes = "ic_bolt"),
-            Category(id = 6, name = "Дюбели", iconRes = "ic_bolt"),
-            Category(id = 7, name = "Гвозди", iconRes = "ic_bolt"),
-            Category(id = 8, name = "Хомуты", iconRes = "ic_bolt")
+            Category(id = 1, name = "Саморезы", iconRes = "ic_cat_samorez"),
+            Category(id = 2, name = "Болты", iconRes = "ic_cat_bolt"),
+            Category(id = 3, name = "Гайки", iconRes = "ic_cat_gaika"),
+            Category(id = 4, name = "Шайбы", iconRes = "ic_cat_shaiba"),
+            Category(id = 5, name = "Анкеры", iconRes = "ic_cat_anker"),
+            Category(id = 6, name = "Дюбели", iconRes = "ic_cat_dubel"),
+            Category(id = 7, name = "Гвозди", iconRes = "ic_cat_gvozd"),
+            Category(id = 8, name = "Хомуты", iconRes = "ic_cat_homut")
         )
         categoryDao.insertAll(categories)
 
@@ -37,7 +37,7 @@ object DatabaseSeeder {
                 material = "Сталь",
                 coating = "Фосфатированное",
                 description = "Саморез по дереву с потайной головкой, шлиц PZ2. Применяется для крепления древесины, ДСП, ОСБ.",
-                imageRes = "ic_placeholder_product",
+                imageRes = "ic_cat_samorez",
                 isPopular = true
             ),
             Product(
@@ -48,7 +48,7 @@ object DatabaseSeeder {
                 material = "Сталь",
                 coating = "Жёлтый цинк",
                 description = "Универсальный саморез для сквозного крепления деревянных конструкций.",
-                imageRes = "ic_placeholder_product"
+                imageRes = "ic_cat_samorez"
             ),
             Product(
                 categoryId = 1, name = "Саморез по металлу 4.2x16",
@@ -58,7 +58,7 @@ object DatabaseSeeder {
                 material = "Сталь",
                 coating = "Оцинкованное",
                 description = "Саморез со сверлом по металлу, для крепления профлиста и металлоконструкций.",
-                imageRes = "ic_placeholder_product",
+                imageRes = "ic_cat_samorez",
                 isPopular = true
             ),
             Product(
@@ -69,7 +69,7 @@ object DatabaseSeeder {
                 material = "Сталь",
                 coating = "Оцинкованное",
                 description = "Саморез с пресс-шайбой для крепления тонколистовых материалов.",
-                imageRes = "ic_placeholder_product"
+                imageRes = "ic_cat_samorez"
             ),
 
             // Болты
@@ -81,7 +81,7 @@ object DatabaseSeeder {
                 material = "Сталь 5.8",
                 coating = "Оцинкованное",
                 description = "Болт с шестигранной головкой, класс прочности 5.8. Резьба метрическая, шаг 1.25.",
-                imageRes = "ic_placeholder_product",
+                imageRes = "ic_cat_bolt",
                 isPopular = true
             ),
             Product(
@@ -92,7 +92,7 @@ object DatabaseSeeder {
                 material = "Сталь 8.8",
                 coating = "Оцинкованное",
                 description = "Болт повышенной прочности для ответственных соединений.",
-                imageRes = "ic_placeholder_product"
+                imageRes = "ic_cat_bolt"
             ),
             Product(
                 categoryId = 2, name = "Болт мебельный М6x50",
@@ -102,7 +102,7 @@ object DatabaseSeeder {
                 material = "Сталь",
                 coating = "Оцинкованное",
                 description = "Болт с полукруглой головкой и квадратным подголовком для сборки мебели.",
-                imageRes = "ic_placeholder_product"
+                imageRes = "ic_cat_bolt"
             ),
 
             // Гайки
@@ -114,7 +114,7 @@ object DatabaseSeeder {
                 material = "Сталь",
                 coating = "Оцинкованное",
                 description = "Гайка шестигранная, класс прочности 6. Для сборки болтовых соединений.",
-                imageRes = "ic_placeholder_product",
+                imageRes = "ic_cat_gaika",
                 isPopular = true
             ),
             Product(
@@ -125,7 +125,7 @@ object DatabaseSeeder {
                 material = "Сталь",
                 coating = "Оцинкованное",
                 description = "Гайка под болт М10, стандартная.",
-                imageRes = "ic_placeholder_product"
+                imageRes = "ic_cat_gaika"
             ),
             Product(
                 categoryId = 3, name = "Гайка колпачковая М8",
@@ -135,7 +135,7 @@ object DatabaseSeeder {
                 material = "Сталь",
                 coating = "Никелированное",
                 description = "Гайка с закрытым куполом — закрывает торец резьбы, декоративная.",
-                imageRes = "ic_placeholder_product"
+                imageRes = "ic_cat_gaika"
             ),
 
             // Шайбы
@@ -147,7 +147,7 @@ object DatabaseSeeder {
                 material = "Сталь",
                 coating = "Оцинкованное",
                 description = "Шайба плоская для равномерного распределения нагрузки.",
-                imageRes = "ic_placeholder_product"
+                imageRes = "ic_cat_shaiba"
             ),
             Product(
                 categoryId = 4, name = "Шайба пружинная (гровер) М8",
@@ -157,7 +157,7 @@ object DatabaseSeeder {
                 material = "Пружинная сталь",
                 coating = "Оцинкованное",
                 description = "Шайба-гровер, предотвращает самопроизвольное откручивание соединения.",
-                imageRes = "ic_placeholder_product",
+                imageRes = "ic_cat_shaiba",
                 isPopular = true
             ),
             Product(
@@ -168,7 +168,7 @@ object DatabaseSeeder {
                 material = "Сталь",
                 coating = "Оцинкованное",
                 description = "Шайба увеличенного диаметра для крепления к мягким материалам.",
-                imageRes = "ic_placeholder_product"
+                imageRes = "ic_cat_shaiba"
             ),
 
             // Анкеры
@@ -180,7 +180,7 @@ object DatabaseSeeder {
                 material = "Сталь",
                 coating = "Оцинкованное",
                 description = "Клиновой анкер для крепления в бетоне и полнотелом кирпиче.",
-                imageRes = "ic_placeholder_product",
+                imageRes = "ic_cat_anker",
                 isPopular = true
             ),
             Product(
@@ -191,7 +191,7 @@ object DatabaseSeeder {
                 material = "Сталь",
                 coating = "Оцинкованное",
                 description = "Анкер-болт с шестигранной головкой и распорной втулкой.",
-                imageRes = "ic_placeholder_product"
+                imageRes = "ic_cat_anker"
             ),
             Product(
                 categoryId = 5, name = "Анкер забивной М8",
@@ -201,7 +201,7 @@ object DatabaseSeeder {
                 material = "Сталь",
                 coating = "Оцинкованное",
                 description = "Забивной анкер для крепления резьбовых шпилек в бетон.",
-                imageRes = "ic_placeholder_product"
+                imageRes = "ic_cat_anker"
             ),
 
             // Дюбели
@@ -213,7 +213,7 @@ object DatabaseSeeder {
                 material = "Полипропилен",
                 coating = "—",
                 description = "Распорный нейлоновый дюбель для бетона и кирпича. Используется с шурупом 4-5 мм.",
-                imageRes = "ic_placeholder_product",
+                imageRes = "ic_cat_dubel",
                 isPopular = true
             ),
             Product(
@@ -224,7 +224,7 @@ object DatabaseSeeder {
                 material = "Полипропилен + сталь",
                 coating = "Оцинкованное",
                 description = "Дюбель-гвоздь с потайным бортиком для быстрого монтажа.",
-                imageRes = "ic_placeholder_product"
+                imageRes = "ic_cat_dubel"
             ),
             Product(
                 categoryId = 6, name = "Дюбель для газобетона 8x50",
@@ -234,7 +234,7 @@ object DatabaseSeeder {
                 material = "Полиамид",
                 coating = "—",
                 description = "Специальный дюбель для пористых материалов (газобетон, пенобетон).",
-                imageRes = "ic_placeholder_product"
+                imageRes = "ic_cat_dubel"
             ),
 
             // Гвозди
@@ -246,7 +246,7 @@ object DatabaseSeeder {
                 material = "Сталь",
                 coating = "—",
                 description = "Гвозди строительные с плоской головкой, упаковка 1 кг.",
-                imageRes = "ic_placeholder_product"
+                imageRes = "ic_cat_gvozd"
             ),
             Product(
                 categoryId = 7, name = "Гвозди финишные 1.6x40, 0.5 кг",
@@ -256,7 +256,7 @@ object DatabaseSeeder {
                 material = "Сталь",
                 coating = "Оцинкованное",
                 description = "Финишные гвозди с маленькой головкой для декоративных работ.",
-                imageRes = "ic_placeholder_product"
+                imageRes = "ic_cat_gvozd"
             ),
             Product(
                 categoryId = 7, name = "Гвозди шиферные 4.0x100, 1 кг",
@@ -266,7 +266,7 @@ object DatabaseSeeder {
                 material = "Сталь",
                 coating = "Оцинкованное",
                 description = "Гвозди с резиновой шайбой для крепления шиферных листов.",
-                imageRes = "ic_placeholder_product"
+                imageRes = "ic_cat_gvozd"
             ),
 
             // Хомуты
@@ -278,7 +278,7 @@ object DatabaseSeeder {
                 material = "Нерж. сталь",
                 coating = "—",
                 description = "Хомут металлический червячный для шлангов и трубопроводов.",
-                imageRes = "ic_placeholder_product"
+                imageRes = "ic_cat_homut"
             ),
             Product(
                 categoryId = 8, name = "Хомут пластиковый 3.6x200 (100 шт)",
@@ -288,7 +288,7 @@ object DatabaseSeeder {
                 material = "Нейлон",
                 coating = "—",
                 description = "Стяжка-хомут из нейлона, упаковка 100 шт. Для связывания кабелей и проводов.",
-                imageRes = "ic_placeholder_product",
+                imageRes = "ic_cat_homut",
                 isPopular = true
             ),
             Product(
@@ -299,7 +299,7 @@ object DatabaseSeeder {
                 material = "Оцинк. сталь",
                 coating = "Оцинкованное",
                 description = "Металлический хомут с резиновой прокладкой для крепления сантехнических труб.",
-                imageRes = "ic_placeholder_product"
+                imageRes = "ic_cat_homut"
             )
         )
         productDao.insertAll(products)
