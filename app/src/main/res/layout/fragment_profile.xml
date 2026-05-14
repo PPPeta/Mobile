@@ -72,6 +72,7 @@
             <include android:id="@+id/rowOrders" layout="@layout/row_menu" />
             <include android:id="@+id/rowFavorites" layout="@layout/row_menu" />
             <include android:id="@+id/rowContacts" layout="@layout/row_menu" />
+            <include android:id="@+id/rowTheme" layout="@layout/row_menu" />
             <include android:id="@+id/rowAbout" layout="@layout/row_menu" />
 
             <com.google.android.material.button.MaterialButton

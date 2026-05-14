@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Screw body -->
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M24,6 L26,6 L26,36 L24,36 Z" />
+    <!-- Thread spiral -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M22,12 L28,14 M22,16 L28,18 M22,20 L28,22 M22,24 L28,26 M22,28 L28,30 M22,32 L28,34" />
+    <path
+        android:strokeColor="#795548"
+        android:strokeWidth="1.5"
+        android:pathData="M22,12 L28,14 M22,16 L28,18 M22,20 L28,22 M22,24 L28,26 M22,28 L28,30 M22,32 L28,34" />
+    <!-- Head (Phillips) -->
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M18,4 L30,4 L30,8 L18,8 Z" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1"
+        android:pathData="M24,4.5 L24,7.5 M22,6 L26,6" />
+    <!-- Tip -->
+    <path
+        android:fillColor="#5D4037"
+        android:pathData="M24,36 L26,36 L25,42 Z" />
+</vector>

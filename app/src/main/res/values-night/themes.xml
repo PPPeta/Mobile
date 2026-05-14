@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.StroyKrep" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorPrimaryVariant">@color/brand_primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/brand_accent</item>
+        <item name="colorSecondaryVariant">@color/brand_accent_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:colorBackground">@color/bg</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorError">@color/error</item>
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/brand_primary_dark</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+
+        <item name="materialButtonStyle">@style/Widget.StroyKrep.Button</item>
+        <item name="textInputStyle">@style/Widget.StroyKrep.TextInputLayout</item>
+    </style>
+
+    <style name="Theme.StroyKrep.Splash">
+        <item name="android:windowBackground">@color/brand_primary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/brand_primary</item>
+    </style>
+</resources>

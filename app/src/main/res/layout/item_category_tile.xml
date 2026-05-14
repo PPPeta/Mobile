@@ -8,6 +8,7 @@
     android:padding="@dimen/space_m"
     android:clickable="true"
     android:focusable="true"
+    android:stateListAnimator="@animator/card_state_list_animator"
     android:foreground="?attr/selectableItemBackground">
 
     <FrameLayout

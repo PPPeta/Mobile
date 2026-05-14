@@ -8,6 +8,7 @@
         <item name="android:textStyle">bold</item>
         <item name="android:paddingTop">12dp</item>
         <item name="android:paddingBottom">12dp</item>
+        <item name="android:stateListAnimator">@animator/btn_state_list_animator</item>
     </style>
 
     <style name="Widget.StroyKrep.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
@@ -15,6 +16,7 @@
         <item name="android:textColor">@color/brand_primary</item>
         <item name="cornerRadius">12dp</item>
         <item name="android:textAllCaps">false</item>
+        <item name="android:stateListAnimator">@animator/btn_state_list_animator</item>
     </style>
 
     <style name="Widget.StroyKrep.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">

@@ -11,6 +11,7 @@ import ru.stroykrep.app.data.DatabaseSeeder
 import ru.stroykrep.app.data.repo.AuthRepository
 import ru.stroykrep.app.data.repo.ShopRepository
 import ru.stroykrep.app.data.session.SessionManager
+import ru.stroykrep.app.util.ThemeHelper
 
 class StroyKrepApp : Application() {
 
@@ -35,6 +36,8 @@ class StroyKrepApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        // Применяем сохранённую тему
+        ThemeHelper.applyTheme(sessionManager.getThemeMode())
         appScope.launch {
             DatabaseSeeder.seedIfEmpty(database)
         }

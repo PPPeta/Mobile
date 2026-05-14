@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Outer ring -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M24,10 m-14,0 a14,14 0,1 1,28 0 a14,14 0,1 1,-28 0" />
+    <!-- Inner ring (top) -->
+    <path
+        android:fillColor="#90A4AE"
+        android:pathData="M24,10 m-12,0 a12,12 0,1 1,24 0 a12,12 0,1 1,-24 0" />
+    <!-- Hole -->
+    <path
+        android:fillColor="#37474F"
+        android:pathData="M24,10 m-5,0 a5,5 0,1 1,10 0 a5,5 0,1 1,-10 0" />
+    <!-- Thickness (3D) -->
+    <path
+        android:fillColor="#546E7A"
+        android:pathData="M10,10 L10,14 A14,14 0,0 0,38 14 L38,10 A14,14 0,0 1,10 10" />
+    <!-- Bottom thickness for hole -->
+    <path
+        android:fillColor="#263238"
+        android:pathData="M19,10 L19,14 A5,5 0,0 1,29 14 L29,10 A5,5 0,0 0,19 10" />
+</vector>

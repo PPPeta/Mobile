@@ -8,11 +8,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.launch
 import ru.stroykrep.app.R
 import ru.stroykrep.app.app
 import ru.stroykrep.app.databinding.FragmentProfileBinding
 import ru.stroykrep.app.ui.SplashActivity
+import ru.stroykrep.app.util.ThemeHelper
 
 class ProfileFragment : Fragment() {
 
@@ -33,6 +35,7 @@ class ProfileFragment : Fragment() {
         binding.rowOrders.txtTitle.text = getString(R.string.profile_orders)
         binding.rowFavorites.txtTitle.text = getString(R.string.profile_favorites)
         binding.rowContacts.txtTitle.text = getString(R.string.profile_contacts)
+        binding.rowTheme.txtTitle.text = getString(R.string.settings_theme)
         binding.rowAbout.txtTitle.text = getString(R.string.profile_about)
 
         val nav = findNavController()
@@ -41,6 +44,7 @@ class ProfileFragment : Fragment() {
         binding.rowOrders.root.setOnClickListener { nav.navigate(R.id.action_global_ordersFragment) }
         binding.rowFavorites.root.setOnClickListener { nav.navigate(R.id.action_global_favoritesFragment) }
         binding.rowContacts.root.setOnClickListener { nav.navigate(R.id.action_global_contactsFragment) }
+        binding.rowTheme.root.setOnClickListener { showThemeDialog() }
         binding.rowAbout.root.setOnClickListener { nav.navigate(R.id.action_global_aboutFragment) }
 
         binding.btnLogout.setOnClickListener {
@@ -50,6 +54,25 @@ class ProfileFragment : Fragment() {
             startActivity(intent)
             requireActivity().finish()
         }
+    }
+
+    private fun showThemeDialog() {
+        val ctx = requireContext()
+        val items = arrayOf(
+            getString(R.string.theme_system),
+            getString(R.string.theme_light),
+            getString(R.string.theme_dark)
+        )
+        val currentMode = ctx.app.sessionManager.getThemeMode()
+
+        MaterialAlertDialogBuilder(ctx)
+            .setTitle(R.string.settings_theme)
+            .setSingleChoiceItems(items, currentMode) { dialog, which ->
+                ctx.app.sessionManager.setThemeMode(which)
+                ThemeHelper.applyTheme(which)
+                dialog.dismiss()
+            }
+            .show()
     }
 
     override fun onResume() {

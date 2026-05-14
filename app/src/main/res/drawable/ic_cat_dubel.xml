@@ -1,0 +1,34 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Body -->
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M20,6 L28,6 L28,36 L20,36 Z" />
+    <!-- Ribs / barbs -->
+    <path
+        android:fillColor="#F57C00"
+        android:pathData="M18,10 L20,12 L20,10 Z M28,10 L30,10 L28,12 Z" />
+    <path
+        android:fillColor="#F57C00"
+        android:pathData="M18,16 L20,18 L20,16 Z M28,16 L30,16 L28,18 Z" />
+    <path
+        android:fillColor="#F57C00"
+        android:pathData="M18,22 L20,24 L20,22 Z M28,22 L30,22 L28,24 Z" />
+    <path
+        android:fillColor="#F57C00"
+        android:pathData="M18,28 L20,30 L20,28 Z M28,28 L30,28 L28,30 Z" />
+    <!-- Split at bottom -->
+    <path
+        android:fillColor="#E65100"
+        android:pathData="M20,36 L22,42 L24,36 Z" />
+    <path
+        android:fillColor="#E65100"
+        android:pathData="M24,36 L26,42 L28,36 Z" />
+    <!-- Collar -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M18,4 L30,4 L30,8 L18,8 Z" />
+</vector>
