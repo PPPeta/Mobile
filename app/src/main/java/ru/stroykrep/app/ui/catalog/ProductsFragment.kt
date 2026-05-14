@@ -74,7 +74,9 @@ class ProductsFragment : Fragment() {
         }
 
         binding.editSearch.doOnTextChanged { text ->
-            filter.value = filter.value.copy(query = text.toString().trim())
+            val query = text.toString().trim()
+            filter.value = filter.value.copy(query = query)
+            adapter.highlightQuery = query
         }
 
         binding.btnSort.setOnClickListener { showSortDialog() }
