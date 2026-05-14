@@ -131,12 +131,17 @@
     <string name="cp_err_old">Неверный текущий пароль</string>
 
     <!-- Contacts -->
-    <string name="contacts_address_label">Адрес</string>
+    <string name="contacts_address_label">Адреса магазинов</string>
     <string name="contacts_phone_label">Телефон</string>
+    <string name="contacts_email_label">Email</string>
     <string name="contacts_hours_label">Режим работы</string>
-    <string name="contacts_address_value">г. Москва, ул. Строителей, д. 12</string>
-    <string name="contacts_phone_value">+7 (495) 123-45-67</string>
-    <string name="contacts_hours_value">Пн–Пт: 9:00–19:00\nСб–Вс: 10:00–17:00</string>
+    <string name="contacts_shop1_title">Магазин №1 — Прокат инструмента</string>
+    <string name="contacts_shop1_address">г. Шуя, ул. 1-я Железнодорожная, д. 1</string>
+    <string name="contacts_shop2_title">Магазин №2 — Крепёж, стройматериалы, инструменты</string>
+    <string name="contacts_shop2_address">г. Шуя, ул. Кооперативная, д. 4</string>
+    <string name="contacts_phone_value">+7 (901) 680-06-98</string>
+    <string name="contacts_email_value">serg37.serov@yandex.ru</string>
+    <string name="contacts_hours_value">Пн–Пт: 08:00–20:00\nСб–Вс: 08:00–17:00\nРаботаем без перерывов</string>
 
     <!-- About -->
     <string name="about_title">О приложении</string>

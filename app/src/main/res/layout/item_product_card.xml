@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="160dp"
     android:layout_height="wrap_content"
     app:cardCornerRadius="12dp"
     app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/surface"
     android:foreground="?attr/selectableItemBackground"
     android:clickable="true"
     android:focusable="true"
@@ -16,13 +18,38 @@
         android:orientation="vertical"
         android:padding="@dimen/space_m">
 
-        <ImageView
-            android:id="@+id/imgProduct"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@drawable/bg_product_image"
-            android:padding="@dimen/space_s"
-            android:src="@drawable/ic_placeholder_product" />
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/imgProduct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_product_image"
+                android:padding="@dimen/space_s"
+                android:src="@drawable/ic_placeholder_product"
+                android:contentDescription="@null" />
+
+            <!-- Бейдж скидки (виден только для популярных товаров) -->
+            <TextView
+                android:id="@+id/badgeDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_discount_badge"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="-20%"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </FrameLayout>
 
         <TextView
             android:id="@+id/txtName"
@@ -34,18 +61,34 @@
             android:textColor="@color/text_primary"
             android:textSize="13sp"
             android:textStyle="bold"
-            tools:text="Саморез по дереву 3.5x35"
-            xmlns:tools="http://schemas.android.com/tools" />
+            tools:text="Саморез по дереву 3.5x35" />
 
-        <TextView
-            android:id="@+id/txtPrice"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_xs"
-            android:textColor="@color/brand_accent_dark"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            tools:text="1,20 ₽"
-            xmlns:tools="http://schemas.android.com/tools" />
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brand_accent_dark"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="1,20 ₽" />
+
+            <TextView
+                android:id="@+id/txtPriceOld"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:text="1,50 ₽"
+                tools:visibility="visible" />
+        </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

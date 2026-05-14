@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Brand (same accents, darker primary) -->
-    <color name="brand_primary">#0D2137</color>
-    <color name="brand_primary_dark">#081524</color>
-    <color name="brand_accent">#F57C00</color>
-    <color name="brand_accent_dark">#E65100</color>
+    <!-- Brand: ярче для контраста с тёмным фоном -->
+    <color name="brand_primary">#1E3A5F</color>
+    <color name="brand_primary_dark">#0F1E33</color>
+    <color name="brand_accent">#FFA726</color>
+    <color name="brand_accent_dark">#FB8C00</color>
 
     <!-- Neutral -->
     <color name="white">#FFFFFFFF</color>
     <color name="black">#FF000000</color>
-    <color name="bg">#121212</color>
-    <color name="surface">#1E1E1E</color>
-    <color name="divider">#2C2C2C</color>
+    <color name="bg">#0F1115</color>
+    <color name="surface">#1C1F26</color>
+    <color name="divider">#3A3F4A</color>
 
     <!-- Text -->
-    <color name="text_primary">#E8E8E8</color>
-    <color name="text_secondary">#9E9E9E</color>
-    <color name="text_hint">#757575</color>
+    <color name="text_primary">#F2F2F2</color>
+    <color name="text_secondary">#B5B9C2</color>
+    <color name="text_hint">#8A8F99</color>
     <color name="text_on_primary">#FFFFFF</color>
 
-    <!-- Status -->
-    <color name="status_new">#42A5F5</color>
-    <color name="status_paid">#66BB6A</color>
-    <color name="status_delivery">#FFA726</color>
-    <color name="status_done">#78909C</color>
+    <!-- Status: ярче для тёмного фона -->
+    <color name="status_new">#64B5F6</color>
+    <color name="status_paid">#81C784</color>
+    <color name="status_delivery">#FFB74D</color>
+    <color name="status_done">#90A4AE</color>
     <color name="error">#EF5350</color>
 </resources>

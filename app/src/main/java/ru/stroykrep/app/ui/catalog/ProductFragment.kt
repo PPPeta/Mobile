@@ -4,12 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.coroutines.launch
 import ru.stroykrep.app.R
 import ru.stroykrep.app.app
@@ -56,7 +56,14 @@ class ProductFragment : Fragment() {
             val p = product ?: return@setOnClickListener
             viewLifecycleOwner.lifecycleScope.launch {
                 repo.addToCart(userId, p.id, delta = 1)
-                Toast.makeText(ctx, ctx.getString(R.string.product_in_cart), Toast.LENGTH_SHORT).show()
+                Snackbar.make(binding.root, getString(R.string.product_in_cart), Snackbar.LENGTH_LONG)
+                    .setAction("В корзину") {
+                        findNavController().navigate(R.id.cartFragment)
+                    }
+                    .setBackgroundTint(ctx.getColor(R.color.brand_primary))
+                    .setTextColor(ctx.getColor(R.color.white))
+                    .setActionTextColor(ctx.getColor(R.color.brand_accent))
+                    .show()
             }
         }
 
