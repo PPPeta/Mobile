@@ -93,6 +93,12 @@ class HomeFragment : Fragment() {
                 }
             }
         }
+
+        // Загружаем количество товаров по категориям
+        viewLifecycleOwner.lifecycleScope.launch {
+            val counts = requireContext().app.database.productDao().countPerCategory()
+            categoryAdapter.productCounts = counts.associate { it.categoryId to it.cnt }
+        }
     }
 
     /**
