@@ -27,4 +27,12 @@ interface ProductDao {
 
     @Query("SELECT * FROM products WHERE name LIKE '%' || :query || '%' ORDER BY name LIMIT 50")
     fun search(query: String): Flow<List<Product>>
+
+    @Query("SELECT categoryId, COUNT(*) as cnt FROM products GROUP BY categoryId")
+    suspend fun countPerCategory(): List<CategoryCount>
 }
+
+data class CategoryCount(
+    val categoryId: Long,
+    val cnt: Int
+)

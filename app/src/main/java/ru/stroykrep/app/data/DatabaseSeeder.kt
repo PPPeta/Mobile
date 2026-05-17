@@ -23,7 +23,8 @@ object DatabaseSeeder {
             Category(id = 5, name = "Анкеры", iconRes = "ic_cat_anker"),
             Category(id = 6, name = "Дюбели", iconRes = "ic_cat_dubel"),
             Category(id = 7, name = "Гвозди", iconRes = "ic_cat_gvozd"),
-            Category(id = 8, name = "Хомуты", iconRes = "ic_cat_homut")
+            Category(id = 8, name = "Хомуты", iconRes = "ic_cat_homut"),
+            Category(id = 9, name = "Аренда инструментов", iconRes = "ic_cat_rent")
         )
         categoryDao.insertAll(categories)
 
@@ -530,6 +531,70 @@ object DatabaseSeeder {
                 coating = "Оцинкованное",
                 description = "Пружинный хомут для топливных и охлаждающих шлангов автомобиля.",
                 imageRes = "ic_cat_homut"
+            ),
+
+            // Аренда инструментов
+            Product(
+                categoryId = 9, name = "Перфоратор Bosch GBH 2-26 (аренда)",
+                sku = "АР-ПРФ-01", price = 500.00,
+                standard = "—",
+                size = "SDS-Plus, 800 Вт",
+                material = "—",
+                coating = "—",
+                description = "Аренда перфоратора Bosch на сутки. Мощность 800 Вт, патрон SDS-Plus, 3 режима работы. Залог — 3000 ₽.",
+                imageRes = "ic_cat_rent",
+                isPopular = true
+            ),
+            Product(
+                categoryId = 9, name = "Шуруповёрт Makita DDF482 (аренда)",
+                sku = "АР-ШРП-01", price = 350.00,
+                standard = "—",
+                size = "18V, Li-Ion, 2 АКБ",
+                material = "—",
+                coating = "—",
+                description = "Аккумуляторный шуруповёрт Makita. Два аккумулятора в комплекте. Залог — 2500 ₽.",
+                imageRes = "ic_cat_rent"
+            ),
+            Product(
+                categoryId = 9, name = "Болгарка (УШМ) 125 мм (аренда)",
+                sku = "АР-УШМ-01", price = 400.00,
+                standard = "—",
+                size = "125 мм, 1100 Вт",
+                material = "—",
+                coating = "—",
+                description = "Угловая шлифовальная машина 125 мм. Подходит для резки металла, плитки, камня. Залог — 2000 ₽.",
+                imageRes = "ic_cat_rent"
+            ),
+            Product(
+                categoryId = 9, name = "Лобзик электрический (аренда)",
+                sku = "АР-ЛБЗ-01", price = 300.00,
+                standard = "—",
+                size = "710 Вт, ход 26 мм",
+                material = "—",
+                coating = "—",
+                description = "Электролобзик для фигурной и прямой резки дерева, фанеры, ДСП. Залог — 1500 ₽.",
+                imageRes = "ic_cat_rent"
+            ),
+            Product(
+                categoryId = 9, name = "Строительный фен 2000 Вт (аренда)",
+                sku = "АР-ФЕН-01", price = 250.00,
+                standard = "—",
+                size = "2000 Вт, 50–600°C",
+                material = "—",
+                coating = "—",
+                description = "Технический фен с регулировкой температуры. Для снятия краски, усадки термотрубок, сушки. Залог — 1000 ₽.",
+                imageRes = "ic_cat_rent"
+            ),
+            Product(
+                categoryId = 9, name = "Штроборез (бороздодел) 150 мм (аренда)",
+                sku = "АР-ШТР-01", price = 800.00,
+                standard = "—",
+                size = "150 мм, 2400 Вт",
+                material = "—",
+                coating = "—",
+                description = "Штроборез для прорезания борозд в бетоне и кирпиче под кабели. 2 диска 150 мм. Залог — 5000 ₽.",
+                imageRes = "ic_cat_rent",
+                isPopular = true
             )
         )
         productDao.insertAll(products)

@@ -48,6 +48,12 @@ class CategoriesFragment : Fragment() {
                     .collect { adapter.submitList(it) }
             }
         }
+
+        // Количество товаров в каждой категории
+        viewLifecycleOwner.lifecycleScope.launch {
+            val counts = requireContext().app.database.productDao().countPerCategory()
+            adapter.productCounts = counts.associate { it.categoryId to it.cnt }
+        }
     }
 
     override fun onDestroyView() {
